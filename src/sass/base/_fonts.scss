@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'GTSuper';
+    font-style: bold;
+    font-weight: 900;
+    src: local('GTSuper'),
+    url(../../fonts/GT-Super-Display-Bold-Trial.otf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto'),
+    url('../../fonts/Roboto-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto'),
+    url('../../fonts/Roboto-Bold.ttf');
+    font-style: bold;
+    font-weight: 500;
+}

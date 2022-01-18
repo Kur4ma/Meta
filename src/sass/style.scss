@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+@import 'base/fonts';
+@import 'base/general';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/line';
+@import 'blocks/cards';
+.container {
+  width: 97%;
+  margin: 0 auto;
+}
