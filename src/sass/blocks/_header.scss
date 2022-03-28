@@ -1,3 +1,6 @@
+* {
+    font-family: 'Roboto';
+}
 .header {
     margin-top: 10px;
     &__nav {
@@ -10,8 +13,7 @@
             margin-right: auto;
             text-align: center;
             list-style: none;
-            font-family: 'Roboto';
-            font-size: 18;
+            font-size: 15px;
             &-items {
                 padding-right: 40px;
                 a {
@@ -25,43 +27,193 @@
         }
         &_button {
             width: 10%;
-            height: 28px;
-            background-color: #3671BF;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 22;
-            font-family: 'Roboto';
-            cursor: pointer;
-            outline: none;
-            &:hover {
-                background-color: #1F4E8C;
+            &-item {
+                width: 100%;
+                height: 28px;
+                background-color: #3671BF;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                font-size: 13px;
+                cursor: pointer;
+                outline: none;
+                &:hover {
+                    background-color: #1F4E8C;
+                    }
+                }
             }
-        }
         &_phone {
             color: #000;
             text-decoration: none;
             margin-top: 5px;
-            margin-left: 30px;
-            font-family: "Roboto";  
-            font-size: 20;
+            margin-left: 30px; 
+            font-size: 16px;
+            cursor: pointer;
             &:hover {
                 text-decoration: underline;
             }
         }
-    }
-    
+    }  
 }
 @media (max-width: 1200px) {
-.header {
-    &_nav {
-        font-size: 14px;
-        &_ul {
+    .header {
+        &__nav {
             font-size: 14px;
-            a {
+            &_ul {
+                font-size: 14px;
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .header {
+        &__nav {
+            &_ul {
+                &-items {
+                    padding-right: 25px;
+                    }
+                }
+            &_button {
+                &-item {
+                    font-size: 11px;
+                }
+            }
+            }
+        }
+    }
+@media (max-width: 1000px) {
+    .header {
+        &__nav {
+            font-size: 13px;
+            &_ul {
+                font-size: 13px;
+            }
+            &_phone {
                 font-size: 14px;
             }
         }
     }
- }
+}
+@media (max-width: 976px) {
+    .header {
+        &__nav {
+            &_ul {
+                &-items {
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+            &_button {
+                font-size: 13px;
+            }
+            &_phone {
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .header {
+        &__icon {
+            z-index: 5;
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 18px;
+            cursor: pointer;
+            margin: 0 0 0 auto;
+        }
+        &__icon span, 
+        &__icon::before,
+        &__icon::after {
+            left: 0;
+            position: absolute;
+            height: 10%;
+            width: 100%;
+            transition: all 0.3s ease 0s;
+            background-color: #fff;
+        }
+        &__icon::before,
+        &__icon::after {
+            content: "";
+        }
+        &__icon::before {
+            top: 0;
+        }
+        &__icon::after {
+            bottom: 0;
+        }
+        &__icon span {
+            top: 50%;
+            transform: scale(1) translate(0px,-50%);
+        }
+        &__icon_active span {
+            transform: scale(0) translate(0px, -50%);
+        }
+        &__icon_active::before {
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, -50%);
+        }
+        &__icon_active::after {
+            bottom: 50%;
+            transform: rotate(45deg) translate(0px, 50%);
+        }
+        &__nav {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translate(-100%, 0px);
+            transition: all 0.3s ease 0s;
+            text-align: center;
+            background-color: rgba($color: #000000, $alpha: 0.9);
+            overflow: auto;
+            &_ul {
+                display: block;
+                margin: 0 auto;
+                &-items {
+                    padding-top: 7px;
+                    padding-right: 0px;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            img {
+                visibility: hidden;
+            }
+            &_button {
+                margin: 0 auto;
+                width: 20%;
+                &-item { 
+                    text-align: center;
+                    background-color: rgba($color: #000000, $alpha: 0);
+                    color: #fff;
+                    font-size: 15px;
+                        &:hover {
+                            background-color: rgba($color: #000000, $alpha: 0);
+                        }
+                }
+            }
+            &_phone {
+                margin: 0 auto;
+                padding-top: 10px;
+                color: #fff;
+            }   
+        }
+        &__nav_active {
+            transform: translate(0px, 0px);
+        }
+        &__icon_active span, 
+        &__icon_active::before,
+        &__icon_active::after {
+            background-color: #000;
+        }
+    }
 }

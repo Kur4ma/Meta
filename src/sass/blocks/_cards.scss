@@ -1,6 +1,10 @@
+* {
+    font-family: "Roboto";
+}
 .cards {
     .container {
         display: flex;
+        overflow-x: hidden;
         .cards__filters {
             position: relative;
             margin-right: 100px;

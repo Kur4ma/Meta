@@ -1,3 +1,6 @@
+* {
+    font-family: 'Roboto';
+}
 .promo {
     .container {
         display: flex;
@@ -10,7 +13,7 @@
             color: #fff;
             border: none;
             border-radius: 4px;
-            font-size: 22;
+            font-size: 14px;
             font-family: 'Roboto';
             cursor: pointer;
             outline: none;
@@ -23,7 +26,7 @@
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 10px;
-            margin-left: 30%;
+            justify-content: center;
             &_form {
             position: relative;
             width: 300px;
@@ -68,7 +71,7 @@
             color: #fff;
             border: none;
             border-radius: 4px;
-            font-size: 22;
+            font-size: 14px;
             font-family: 'Roboto';
             cursor: pointer;
             outline: none;
@@ -83,5 +86,63 @@
     }
 }
 @media (max-width: 1200px) {
-    
+    .promo {
+        .container {
+            .promo__catalog {
+                width: 13%;
+                height: 30px;
+            }
+            .promo__basket {
+                padding-left: 15px;
+                img {
+                    padding-left: 15px;
+                    width: 32%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .promo {
+        .container {
+            .promo__search {
+                &_form {
+                    width: 250px;
+                    &_input {
+                        height: 28px;
+
+                    }
+                    &_button {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 976px) {
+    .promo {
+        .container {
+            .promo__basket {
+                font-size: 13px;
+                padding-left: 5px;
+                img {
+                    padding-left: 10px;
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .promo {
+        .container {
+            .promo__search {
+                &_form {
+                    z-index: -1;
+                }
+            }
+        }
+    }
 }

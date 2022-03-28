@@ -11,7 +11,9 @@
 @import 'blocks/promo';
 @import 'blocks/line';
 @import 'blocks/cards';
+@import 'blocks/body';
 .container {
   width: 97%;
   margin: 0 auto;
+  max-width: 1600px;
 }

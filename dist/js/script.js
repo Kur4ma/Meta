@@ -11,3 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+const iconHeader = document.querySelector('.header__icon');
+if (iconHeader) {
+    const navHeader = document.querySelector('.header__nav');
+    iconHeader.addEventListener("click", function(e) {
+        document.body.classList.toggle('.lock');
+        iconHeader.classList.toggle('header__icon_active');
+        navHeader.classList.toggle('header__nav_active')
+    });
+}
