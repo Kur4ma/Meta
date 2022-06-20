@@ -9,9 +9,12 @@
 @import 'base/mixins';
 @import 'blocks/header';
 @import 'blocks/promo';
-@import 'blocks/line';
-@import 'blocks/cards';
-@import 'blocks/body';
+@import 'blocks/nft';
+@import 'blocks/artists';
+@import 'blocks/story';
+@import 'blocks/parallax';
+@import 'blocks/roadmap';
+@import 'blocks/logoholder';
 .container {
   width: 97%;
   margin: 0 auto;

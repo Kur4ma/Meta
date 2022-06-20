@@ -1,147 +1,117 @@
-* {
-    font-family: 'Roboto';
-}
 .promo {
+    background-color: #000000;
     .container {
         display: flex;
-        align-items: center;
-        .promo__catalog {
-            align-items: center;
-            width: 10%;
-            height: 35px;
-            background-color: #3671BF;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 14px;
-            font-family: 'Roboto';
-            cursor: pointer;
-            outline: none;
-            &:hover {
-                background-color: #1F4E8C;
+        padding-bottom: 124px;
+    }
+        &__header {
+            margin-top: 128px;
+            &_subheader {
+                font-family: 'Audiowide';
+                color: #ffffff;
+                font-size: 51px;
             }
-        }
-        .promo__search {
-            box-sizing: border-box;
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            justify-content: center;
-            &_form {
-            position: relative;
-            width: 300px;
-            background: #fff;
-                &_input {
-                width: 100%;
-                height: 32px;
-                padding-left: 10px;
-                border: 1px solid #808080;
-                border-radius: 5px;
-                outline: none;
-                background: #fff;
-                color: #808080;
-                }
-                &_button {
-                position: absolute; 
-                top: 0;
-                right: 0px;
-                width: 32px;
-                height: 32px;
-                border: 1px solid #808080;
-                border-left: none;
-                background: #fff;
-                border-radius: 0 5px 5px 0;
-                cursor: pointer;
-                &:before {
-                    content: url(../../icons/magnifier.svg);
-                    font-family: "Roboto";
-                    font-size: 13px;
-                    color: #fff;
-                    }
+            &_afterheader {
+                margin-top: 43px;
+                font-family: 'Inter';
+                color: #ffffff;
+                font-size: 16px;
+                width: 340px;
+            }
+            button {
+                margin-top: 115px;
+                height: 60px;
+                width: 205px;
+                background-color: #8DFD1B;
+                font-family: 'DMMono';
+                font-size: 16px;
+                border: none;
+                cursor: pointer;    
+                &:hover {
+                    background-color: #70c916;
                 }
             }
         }
-        .promo__basket {
-            display: flex;
-            align-items: center;
-            padding-left: 25px;
-            width: 10%;
-            height: 28px;
-            background-color: #3671BF;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 14px;
-            font-family: 'Roboto';
-            cursor: pointer;
-            outline: none;
-            &:hover {
-                background-color: #1F4E8C;
-            }
+        &__img {
+            padding-top: 80px;
             img {
-                padding-left: 25px;
-                width: 38%;
+                width: 100%;
+            }
+        }
+    }
+@media (max-width: 1100px) {
+    .promo {
+        &__header {
+            margin-top: 0px;
+            padding-top: 80px;
+        }
+    }
+}
+@media (max-width: 960px) {
+    .promo {
+        &__header {
+            &_subheader {
+                font-size: 39px;
+                width: 340px;
+            }
+            &_afterheader {
+                font-size: 10px;
+                width: 220px;
+            }
+            button {
+                width: 140px;
+                height: 34px;
+                font-size: 10px;
             }
         }
     }
 }
-@media (max-width: 1200px) {
+@media (max-width:700px) {
     .promo {
-        .container {
-            .promo__catalog {
-                width: 13%;
-                height: 30px;
+        &__header {
+            &_subheader {
+                font-size: 33px;
+                width: 300px;
             }
-            .promo__basket {
-                padding-left: 15px;
-                img {
-                    padding-left: 15px;
-                    width: 32%;
-                }
+            &_afterheader {
+                font-size: 9px;
             }
-        }
-    }
-}
-@media (max-width: 1000px) {
-    .promo {
-        .container {
-            .promo__search {
-                &_form {
-                    width: 250px;
-                    &_input {
-                        height: 28px;
-
-                    }
-                    &_button {
-                        width: 28px;
-                        height: 28px;
-                    }
-                }
+            button {
+                margin-top: 98px;
             }
         }
     }
 }
-@media (max-width: 976px) {
+@media (max-width: 650px) {
     .promo {
-        .container {
-            .promo__basket {
-                font-size: 13px;
-                padding-left: 5px;
-                img {
-                    padding-left: 10px;
-                    width: 30%;
-                }
+        &__header {
+            padding-top: 20px;
+            text-align: center;
+            margin: 0 auto;
+            &_subheader {
+                margin-top: 50px;
             }
+            &_afterheader {
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+        }
+        &__img {
+            display: none;
         }
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 300px) {
     .promo {
-        .container {
-            .promo__search {
-                &_form {
-                    z-index: -1;
-                }
+        &__header {
+            &_subheader {
+                width: 265px;
+                font-size: 22px;
+            }
+            &_afterheader {
+                font-size: 7px;
+                width: 190px;
             }
         }
     }

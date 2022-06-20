@@ -1,0 +1,20 @@
+.logoholder {
+    background-color: #000000;
+    &__promo {
+        text-align: center;
+        margin: 0 auto;
+        font-family: 'DMMono';
+        font-size: 11px;
+        color: #8DFD1B;
+        margin-bottom: 60px;
+    }
+    &__body {
+        display: flex;  
+        flex-wrap: wrap;
+        width: 1160px;
+        justify-content: space-between;
+        svg {
+            margin-bottom: 60px;
+        }
+    }
+}

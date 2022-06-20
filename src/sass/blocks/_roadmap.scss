@@ -1,0 +1,411 @@
+.roadmap {
+    background-color: #000000;
+    padding-bottom: 240px;
+    &__circle {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        &_ballf {
+            position: absolute;
+        }
+        &_balls {
+            position: absolute;
+            margin-top: 30%;
+            right: 0%;
+        }
+        &_ballt {
+            position: absolute;
+            margin-top: 60%;
+        }
+    }
+    &__header {
+        z-index: 5;
+        text-align: center;
+        font-family: 'Audiowide';
+        font-size: 38px;
+        color: #FFFFFF;
+        position: relative;
+        padding-top: 118px;
+        margin-bottom: 100px;
+    }
+    &__cards {
+        z-index: 5;
+        position: relative;
+        &_season {
+            background-color: #222222;
+            margin: 0 auto;
+            width: 540px;
+            &-promo {
+                display: flex;
+                border: 2px solid;
+                border-color: #8DFD1B;
+                &__figure {
+                    font-family: 'DMMono';
+                    color: #8DFD1B;
+                    font-size: calc(12px + 16 * (100vw/1280));
+                    padding: 8px 16px;
+                    margin: 12px;
+                    border: 2px solid;
+                    border-color: #8DFD1B;
+                    &:hover {
+                        color: #000000;
+                        background-color: #8DFD1B;
+                    }
+                }
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    &_phase {
+                        font-family: 'DMMono';
+                        text-transform: uppercase;
+                        font-size: calc(6px + 4 * (100vw/1280));
+                        color: #8DFD1B;   
+                    }
+                    &_stage {
+                        font-family: 'DMMono';
+                        text-transform: uppercase;
+                        font-size: calc(11px + 5 * (100vw/1280));
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            &-afterpromo {
+                display: flex;
+                border: 2px solid;
+                border-color: #8DFD1B;
+                border-top: none;
+                &__formulation {
+                    padding: 30px 12px;
+                    &_description {
+                        display: block;
+                        margin-bottom: 16px;
+                        &-body {
+                            padding-left: 18px;
+                            font-family: 'Inter';
+                            color: #FFFFFF;
+                            font-size: calc(5px + 6 * (100vw/1280));
+                            margin-bottom: 12px;
+                        }
+                    }
+                    &_item {
+                        font-family: 'Inter';
+                        font-size: calc(5px + 6 * (100vw/1280));
+                        color: #FFFFFF;
+                        line-height: 25px;
+                        a {
+                            font-family: 'DMMono';
+                            font-size: calc(6px + 6 * (100vw/1280));
+                            color: #8DFD1B;
+                            text-decoration: none;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                img {
+                    padding: 30px 12px;
+                }
+            }
+        }
+        &_line {
+            text-align: center;
+            margin: 0 auto;
+            width: 1px;
+            height: 40px;
+            margin-top: 45px;
+            margin-bottom: 55px;
+            background-color: #8DFD1B;
+        }
+    }
+}
+@media (max-width: 1300px) {
+    .roadmap {
+        &__circle {
+            &_ballf {
+                width: 50%;
+            }
+            &_balls {
+                width: 50%;
+                margin-top: 50%;
+            }
+            &_ballt {
+                width: 50%;
+                margin-top: 70%;
+            }
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .roadmap {
+        &__circle {
+            &_ballt {
+                margin-top: 80%;
+            }
+        }
+    }
+}
+@media (max-width: 1030px) {
+    .roadmap {
+        &__circle {
+            &_balls {
+                margin-top: 50%;
+            }
+            &_ballt {
+                margin-top: 90%;
+            }
+        }
+    }
+}
+@media (max-width: 950px) {
+    .roadmap {
+        &__circle {
+            &_balls {
+                margin-top: 55%;
+            }
+            &_ballt {
+                margin-top: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 865px) {
+    .roadmap {
+        &__circle {
+            &_balls {
+                margin-top: 60%;
+            }
+            &_ballt {
+                margin-top: 110%;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .roadmap {
+        &__circle {
+            &_balls {
+                margin-top: 70%;
+            }
+            &_ballt {
+                margin-top: 125%;
+            }
+        }
+        &__cards {
+            &_season {
+                width: 470px;
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .roadmap {
+        &__circle {
+            &_balls {
+                margin-top: 80%;
+            }
+            &_ballt {
+                margin-top: 140%;
+            }
+        }
+    }
+}
+@media (max-width: 661px) {
+    .roadmap {
+        &__circle {
+            &_balls {
+                margin-top: 90%;
+            }
+            &_ballt {
+                margin-top: 150%;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .roadmap {
+        &__circle {
+            &_balls {
+                margin-top: 100%;
+            }
+            &_ballt {
+                margin-top: 165%;
+            }
+        }
+        &__cards {
+            &_season {
+                width: 410px;
+            }
+        }
+    }
+}
+@media (max-width: 650px) {
+    .roadmap {
+        &__circle {
+            &_balls {
+                margin-top: 105%;
+            }
+            &_ballt {
+
+                margin-top: 175%;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .roadmap {
+        &__circle {
+            &_ballf {
+                margin-top: 30%;
+            }
+            &_balls {
+                margin-top: 120%;
+            }
+            &_ballt {
+                margin-top: 200%;
+            }
+        }
+        &__cards {
+            &_season {
+                width: 410px;
+                &-afterpromo {
+                    &__formulation {
+                        padding: 18px 12px;
+                    }
+                    img {
+                        padding: 18px 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 430px) {
+    .roadmap {
+        &__circle {
+            &_ballf {
+                margin-top: 40%;
+            }
+            &_balls {
+                margin-top: 130%;
+            }
+            &_ballt {
+                margin-top: 220%;
+            }
+        }
+        &__cards {
+            &_season {
+                width: 360px;
+            }
+            &_line {
+                height: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 380px) {
+    .roadmap {
+        &__circle {
+            &_ballf {
+                margin-top: 50%;
+            }
+            &_balls {
+                margin-top: 155%;
+            }
+            &_ballt {
+                margin-top: 250%;
+            }
+        }
+        &__cards {
+            &_season {
+                width: 325px;
+                &-afterpromo {
+                    &__formulation {
+                        padding: 14px 8px;
+                    }
+                    img {
+                        padding: 14px 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 366px) {
+    .roadmap {
+        &__circle {
+            &_ballf {
+                margin-top: 55%;
+            }
+            &_balls {
+                margin-top: 165%;
+            }
+            &_ballt {
+                margin-top: 270%;
+            }
+        }
+        &__cards {
+            &_season {
+                width: 292px;
+            }
+        }
+    }
+}
+@media (max-width: 307px) {
+    .roadmap {
+        &__circle {
+            &_ballf {
+                margin-top: 65%;
+            }
+            &_balls {
+                margin-top: 185%;
+            }
+            &_ballt {
+                margin-top: 300%;
+            }
+        }
+        &__cards {
+            &_season {
+                width: 266px;
+                &-promo {
+                    &__figure {
+                        margin: 8px;
+                    }
+                }
+                &-afterpromo {
+                    &__formulation {
+                        padding: 10px 6px;
+                        &_description {
+                            margin-bottom: 0px;
+                            &-body {
+                                margin-bottom: 8px;
+                            }
+                        }
+                        &_item {
+                            line-height: 20px;
+                        }
+                    }
+                    img {
+                        padding: 14px 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 285px) {
+    .roadmap {
+        &__circle {
+            &_ballf {
+                margin-top: 75%;
+            }
+            &_balls {
+                margin-top: 195%;
+            }
+            &_ballt {
+                margin-top: 325%;
+            }
+        }
+    }
+}
