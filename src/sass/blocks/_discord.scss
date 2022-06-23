@@ -1,0 +1,93 @@
+.discord {
+    background-color: #000000;
+    padding-bottom: 118px;
+
+    .container {
+        display: flex;
+        max-width: 1160px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__promo {
+        &_header {
+            max-width: 400px;
+            font-family: 'Audiowide';
+            font-size: calc(26px + 25 * (100vw/1280));
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 34px;
+
+            span {
+                color: #8DFD1B;
+            }
+        }
+
+        &_text {
+            max-width: 345px;
+            font-family: 'Inter';
+            font-size: calc(7px + 9 * (100vw/1280));
+            color: #FFFFFF;
+            margin-bottom: 35px;
+        }
+
+        button {
+            display: flex;
+            border: none;
+            background-color: #8DFD1B;
+            font-family: 'DMMono';
+            font-size: 16px;
+            cursor: pointer;
+            padding: 17px 32px 10px 32px;
+
+            &:hover {
+                background-color: #70c916;
+            }
+
+            svg {
+                padding-right: 9px;
+            }
+        }
+    }
+
+    &__afterpromo {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .discord {
+        .container {
+            display: block;
+        }
+
+        &__promo {
+            text-align: center;
+            margin: 0 auto;
+
+            &_header {
+                max-width: none;
+                margin-bottom: 80px;
+            }
+
+            &_text {
+                max-width: none;
+                margin-bottom: 120px;
+            }
+
+            button {
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+        }
+
+        &__afterpromo {
+            img {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,38 +1,47 @@
 .header {
+    z-index: 300;
     background-color: #000000;
     width: 100%;
     position: sticky;
     top: 0;
     padding-bottom: 20px;
+
     .container {
         width: 85%;
         padding-top: 52px;
     }
+
     &__nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         &_subnav {
             display: flex;
             align-items: center;
+
             &-img {
                 margin-right: 40px;
             }
+
             &-ul {
                 display: flex;
                 text-align: center;
+
                 &_item {
                     list-style: none;
                     font-family: 'DMMono';
+
                     a {
                         color: #FFFFFF;
                         text-decoration: none;
-                        margin-right: 40px;  
+                        margin-right: 40px;
 
                         :nth-child(3) {
                             margin-right: 0px;
-                        }   
+                        }
                     }
+
                     &:hover {
                         text-decoration: underline;
                         margin-top: -5px;
@@ -40,14 +49,16 @@
                     }
                 }
             }
-        } 
+        }
+
         &_messengers {
             &-item {
                 margin-right: 12px;
             }
-        } 
+        }
     }
 }
+
 @media (max-width: 1000px) {
     .header {
         .container {
@@ -55,14 +66,17 @@
         }
     }
 }
+
 @media (max-width: 860px) {
     .header {
         margin-top: 0px;
+
         .container {
             padding-top: 10px;
         }
+
         &__icon {
-            z-index: 100;
+            z-index: 500;
             display: block;
             position: relative;
             width: 30px;
@@ -70,7 +84,8 @@
             cursor: pointer;
             margin: 0 10px 0 auto;
         }
-        &__icon span, 
+
+        &__icon span,
         &__icon::before,
         &__icon::after {
             position: absolute;
@@ -79,38 +94,46 @@
             width: 100%;
             transition: all 0.3s ease 0s;
         }
+
         &__icon::before,
         &__icon::after {
             content: "";
         }
+
         &__icon::before {
             top: 0;
         }
+
         &__icon::after {
             bottom: 0;
         }
+
         &__icon span {
             top: 50%;
-            transform: scale(1) translate(0px,-50%);
+            transform: scale(1) translate(0px, -50%);
         }
+
         &__icon_active span {
             transform: scale(0) translate(0px, -50%);
             background-color: #FFFFFF;
         }
+
         &__icon_active::before {
             top: 50%;
             transform: rotate(-45deg) translate(0px, -50%);
             background-color: #FFFFFF;
         }
+
         &__icon_active::after {
             bottom: 50%;
             transform: rotate(45deg) translate(0px, 50%);
             background-color: #FFFFFF;
         }
+
         &__nav {
             display: block;
             position: fixed;
-            z-index: 500;  
+            z-index: 500;
             top: 0;
             left: 0;
             width: 100%;
@@ -126,24 +149,30 @@
             text-align: center;
             background-color: rgba($color: #000000, $alpha: 0.9);
             overflow: auto;
+
             &_subnav {
                 display: block;
                 margin: 0 auto;
                 text-align: center;
+
                 &-img {
                     margin-right: 0px;
                 }
+
                 &-ul {
                     display: block;
                     margin: 0 auto;
+
                     &_item {
                         padding-top: 10px;
                         padding-right: 0px;
+
                         a {
                             color: #fff;
                             margin-right: 0px;
-                            
+
                         }
+
                         &:hover {
                             text-decoration: underline;
                             margin-top: 0;
@@ -152,6 +181,7 @@
                 }
             }
         }
+
         &__nav_active {
             transform: translate(0px, 0px);
         }

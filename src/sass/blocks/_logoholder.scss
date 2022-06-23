@@ -1,5 +1,6 @@
 .logoholder {
     background-color: #000000;
+    padding-bottom: 245px;
     &__promo {
         text-align: center;
         margin: 0 auto;
@@ -15,6 +16,43 @@
         justify-content: space-between;
         svg {
             margin-bottom: 60px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .logoholder {
+        &__body {
+            width: 1050px;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .logoholder {
+        &__body {
+            width: 1000px;
+        }
+    }
+}
+@media (max-width: 1020px) {
+    .logoholder {
+        &__body {
+            width: 690px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .logoholder {
+        &__body {
+            justify-content: center;
+            text-align: center;
+            width: 643px;
+        }
+    }
+}
+@media (max-width: 650px) {
+    .logoholder {
+        &__body {
+            width: 100%;
         }
     }
 }

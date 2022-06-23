@@ -3,10 +3,11 @@
     .container {
         display: flex;
         justify-content: space-between;
+        max-width: 1160px;
+        margin: 0;
     }
     &__promo {
         display: block;
-        text-align: start;
         &_header {
             margin-bottom: 41px;
             &-first {

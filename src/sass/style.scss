@@ -1,8 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import 'base/fonts';
 @import 'base/general';
 @import 'base/variables';
@@ -15,6 +16,11 @@
 @import 'blocks/parallax';
 @import 'blocks/roadmap';
 @import 'blocks/logoholder';
+@import 'blocks/questions';
+@import 'blocks/team';
+@import 'blocks/discord';
+@import 'blocks/footer';
+
 .container {
   width: 97%;
   margin: 0 auto;

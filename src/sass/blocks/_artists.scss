@@ -2,10 +2,12 @@
     background-color: #000000;
     padding-top: 328px;
     overflow: hidden;
+
     &__twister {
         display: flex;
         position: relative;
         justify-content: space-between;
+
         &_scroll {
             font-family: 'Audiowide';
             position: absolute;
@@ -14,32 +16,39 @@
             bottom: 50px;
             left: -510px;
             z-index: 50;
-            color: #FFFFFF; 
+            color: #FFFFFF;
             animation: slide 6s infinite linear;
+
             &:nth-child(1) {
                 animation-delay: 0s;
             }
+
             &:nth-child(2) {
                 animation-delay: 2s;
             }
+
             &:nth-child(3) {
                 animation-delay: 4s;
             }
+
             @keyframes slide {
                 from {
                     transform: translateX(-20%);
                 }
+
                 to {
                     transform: translateX(600%);
-                }            
+                }
             }
         }
     }
+
     &__peoples {
         display: flex;
         flex-wrap: wrap;
         margin-top: 120px;
         width: 1220px;
+
         a {
             text-decoration: none;
             outline: none;
@@ -48,20 +57,24 @@
             font-size: 16px;
             text-align: center;
         }
+
         &_profile {
             margin-right: 60px;
             margin-bottom: 60px;
+
             &:hover {
                 transition: 0.2s;
                 margin-top: -10px;
                 text-decoration: underline;
             }
+
             &-text {
                 margin-top: 20px;
             }
         }
     }
 }
+
 @media (max-width: 1200px) {
     .artists {
         &__peoples {
@@ -69,6 +82,7 @@
         }
     }
 }
+
 @media (max-width: 876px) {
     .artists {
         &__peoples {
@@ -76,6 +90,7 @@
             text-align: center;
             justify-content: space-between;
             margin: 0 auto;
+
             &_profile {
                 margin: 0 auto;
                 margin-top: 40px;
